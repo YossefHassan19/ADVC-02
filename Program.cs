@@ -59,6 +59,20 @@
 
             #endregion
 
+            #region Task 03 : Custom Report Generator => 3.1 Print Reports
+
+            //Task 03 : Custom Report Generator => 3.1 Print Reports
+
+            //Console.WriteLine("---Short Report---");
+            //Action<List<Product>> PrintReport = Product.shortReport;
+            //PrintReport(catalog);
+
+            //Console.WriteLine("\n---Detailed Report---");
+            //Action<List<Product>> PrintDetailedReport = Product.detailedReport;
+            //PrintDetailedReport(catalog);
+
+            #endregion
+
         }
     }
 }

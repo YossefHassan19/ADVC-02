@@ -27,5 +27,21 @@ namespace ADVC_02
             return Listproducts;
         }
 
+        public static void shortReport(List<Product> products)
+        {
+            foreach (Product product in products)
+            {
+                Console.WriteLine($"{product.Name} - ${product.Price}");
+            }
+        }
+
+        public static void detailedReport(List<Product> products)
+        {
+            foreach (Product product in products)
+            {
+                Console.WriteLine($"[{product.Category}] {product.Name} | Price: ${product.Price} | Stock: {product.Stock}");
+            }
+        }
+
     }
 }
