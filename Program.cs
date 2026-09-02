@@ -95,6 +95,20 @@
 
             #endregion
 
+            #region Task 03 : Custom Report Generator => 3.3 Filter Products
+
+            //Task 03 : Custom Report Generator => 3.3 Filter Products
+
+            //Console.WriteLine("---Low Stock Alert---");
+            //List<Product> lowStockProducts = Product.FilterProducts(catalog, product => product.Stock < 20);
+
+            //foreach (Product product in lowStockProducts)
+            //{
+            //    Console.WriteLine($"{product.Name} - Stock: {product.Stock}");
+            //}
+
+            #endregion
+
         }
     }
 }

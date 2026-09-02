@@ -48,5 +48,18 @@
             return Listproducts;
         }
 
+        public static List<Product> FilterProducts(List<Product> products, Predicate<Product> filter)
+        {
+            List<Product> Listproducts = new List<Product>();
+
+            foreach (Product product in products)
+            {
+                if (filter(product))
+                    Listproducts.Add(product);
+            }
+
+            return Listproducts;
+        }
+
     }
 }
