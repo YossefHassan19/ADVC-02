@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ADVC_02
+﻿namespace ADVC_02
 {
     internal class Product
     {
@@ -41,6 +35,17 @@ namespace ADVC_02
             {
                 Console.WriteLine($"[{product.Category}] {product.Name} | Price: ${product.Price} | Stock: {product.Stock}");
             }
+        }
+
+        public static List<string> TransformProducts(List<Product> products, Func<Product, string> selector)
+        {
+            List<string> Listproducts = new List<string>();
+
+            foreach (Product product in products)
+            { 
+                    Listproducts.Add((string)selector(product));
+            }
+            return Listproducts;
         }
 
     }
